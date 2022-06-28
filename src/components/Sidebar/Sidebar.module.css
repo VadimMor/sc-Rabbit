@@ -1,0 +1,12 @@
+.sidebar {
+    grid-area: sidebar;
+    max-height: 100vh;
+    width: 100px;
+    height: 100%;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: green;
+}
