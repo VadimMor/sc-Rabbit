@@ -1,33 +1,27 @@
 import React from "react";
 import classes from "./Header.module.css"
+import peaple from "./depositphotos_32817757-stock-photo-smiling-man.jpg"
 
 let Header = () => {
     return (
         // Контент верхнего колонтитула страницы
         <header className={classes.header}>
-            {/* Кнопка пользователя с меню пользователя */}
-            <button className="btnUser">
-                {/* Небольшая информация пользователя */}
-                <div className="btnUser__info">
-                    <img src="#" alt="Фото" className="btnUser__image"/>
-                    <div className="btnUser__shortInfo">
-                        <div className="btnUser__names">
-                            <div className="btnUser__firstname">First</div>
-                            <div className="btnUser__lastname">Last</div>
+            <div className="container">
+                <div className={classes.inner__header}>
+                    {/* Кнопка пользователя пользователя */}
+                    <button className={classes.btnUser}>
+                        {/* Небольшая информация пользователя */}
+                        <div className={classes.btnUser__shortInfo}>
+                            <div className={classes.btnUser__names}>
+                                <span>First</span>
+                                <span>Last</span>
+                            </div>
+                            <span className={classes.btnUser__email}>email@email.com</span>
                         </div>
-                        <div className="btnUser__names">email@email.com</div>
-                    </div>
+                        <img src={peaple} alt="Фото" className={classes.btnUser__image}/>
+                    </button>
                 </div>
-
-                {/* Меню пользователя */}
-                <nav className="btnUser__menu">
-                    <ul>
-                        <li><a href="#">Мой профиль</a></li>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a href="#">Настройки</a></li>
-                    </ul>
-                </nav>
-            </button>
+            </div>
         </header>
     )
 }

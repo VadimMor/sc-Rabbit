@@ -1,12 +1,15 @@
 .sidebar {
     grid-area: sidebar;
     max-height: 100vh;
-    width: 100px;
+    width: 90px;
     height: 100%;
+    padding: 15px;
 
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 1000;
 
-    background: green;
+    background: linear-gradient(to bottom, #7773c6,#9d6cc0,#bd64b2);
+    box-shadow: 2px 0 10px #424242;
 }
